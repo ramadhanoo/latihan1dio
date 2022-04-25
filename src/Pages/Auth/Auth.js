@@ -1,8 +1,15 @@
 import './Auth.css';
+import { useNavigate } from 'react-router-dom'
 
 function Auth() {
+  const navigate = useNavigate()
+
   return (
-    <p>Haii</p>
+    <div>
+      <p>Haii</p>
+      <button onClick={() => navigate("dashboard")}>coba</button>
+    </div>
+
   );
 }
 
